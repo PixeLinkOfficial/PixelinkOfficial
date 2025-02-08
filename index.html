@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/x3.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <div class="div-logo">
+            <a class="nochangea" href="index.html"><img src="IMG/1-01.png" class="img-logo"></a>
+        </div>
+
+        <div class="div-buts">
+            <div class="mx mx-4"><a class="nochangea" href="index.html" onclick="func1();"><p class="m-0">Home</p><div class="active active1">_</div></a></div>
+            <div class="mx mx-5"><a class="nochangea" href="x4.html" onclick="func2();"><p class=" m-1">Digital menu</p><div class="active active2">_</div></a></div>
+            <div class="mx mx-6"><a class="nochangea" href="x.html" onclick="func3();"><p class="m-2">Contact</p><div class="active active3">_</div></a></div>
+        </div>
+
+        <div class="div-lang">
+            <select class="div-but" onchange="changeLanguage(this);">
+                <option>English</option>
+                <option>العربية</option>
+                <option>كوردى</option>
+            </select>
+        </div>
+        <div class="mobile-option-bar">
+             <div class="mdiv1">
+                <button class="mobile-menu-button" onclick="mobilemenu();"><img src="IMG/menubar.png" class="mobile-image"></button>
+                <div class="mobile-div-lang">
+                    <div class="mobile-div-buts">
+                        <div class="mmm1 mmm mx mx-4"><a class="nochangea" href="index.html" onclick="func1();"><p class="m-0">Home</p><div class="active active1">_</div></a></div>
+                        <div class="mmm2 mmm mx mx-5"><a class="nochangea" href="x4.html" onclick="func2();"><p class=" m-1">Digital menu</p><div class="active active2">_</div></a></div>
+                        <div class="mmm3 mmm mx mx-6"><a class="nochangea" href="x.html" onclick="func3();"><p class="m-2">Contact</p><div class="active active3">_</div></a></div>
+                    </div>
+                    <div class="mobile-div-but">
+                    <select class="div-but" onclick="med();">
+                        <option>English</option>
+                        <option>العربية</option>
+                        <option>كوردى</option>
+                    </select>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="container container1" style="width: 100%; margin-top: 70px; padding: 0; overflow: visible;"> 
+        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel1" data-slide-to="1"></li>
+            <li data-target="#myCarousel1" data-slide-to="2"></li>
+          </ol>
+          
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" style="overflow: visible; height: 800px;">
+            <div class="item active item1">
+              <img src="CSS/backHome.jpg" alt="General" class="imgdb" style="width:100%; height: 800px; object-fit: cover; object-position: center;">
+              <div class="item-abs" style="position: absolute; top: 60px; left: 100px; text-align: left; color: white;">
+                <h1 class="h1">Bring your vision to life with expert graphic design, custom websites, mobile apps, and dynamic digital menus that set your business apart!</h1>
+              </div>
+              <div class="list-div">
+                <ul>
+                  <li><p>Easy, Fast, Secure Solutions</p></li>
+                  <li><p>Premium Features & Customization</p></li>
+                  <li><p>Unique, Advanced Graphic Designs</p></li>
+                  <li><p>Seamless Website Development</p></li>
+                  <li><p>Innovative Mobile App Creation</p></li>
+                  <li><p>Dynamic Digital Menus for Any Business</p></li>
+                </ul>
+                <a href="x.html" class="a-Try-now" ><button class="Try-now" >Try now</button></a>
+              </div>
+            </div>
+      
+            <div class="item item2">
+              <img class="imgdb" src="IMG/2m.jpg" alt="Graphic Designing" style="width:100%; height: 800px; object-fit: cover; object-position: center;">
+              <div class="item-abs" style="position: absolute; top: 40px; left: 100px; text-align: left; color: white; font-size: 50px;">
+                <h1 class="h1" style="color: white; text-shadow: 1px 1px 1px black;">Unleash your brand's potential with professional graphic design, stunning websites, custom mobile apps, and captivating visual content that elevate your business!</h1>
+              </div>
+              <div class="list-div">
+                <ul style="color: white; text-shadow: 1px 1px 1px black;">
+                  <li><p>Creative, Tailored Design Solutions</p></li>
+                  <li><p>Exceptional Features & Flexibility</p></li>
+                  <li ><p>Innovative and Stunning Visual Designs</p></li>
+                  <li ><p>Responsive and Professional Website Development</p></li>
+                  <li><p>Custom Mobile App Design & Development</p></li>
+                  <li ><p>Engaging Digital Content for Every Platform</p></li>
+                </ul>
+                <a href="x.html" class="a-Try-now"><button class="Try-now">Try now</button></a>
+              </div>
+            </div>
+      
+            <div class="item item3">
+              <img class="imgdb" src="IMG/3m.jpg" alt="Programming" style="width:100%; height: 800px; object-fit: cover; object-position: center;">
+              <div class="item-abs" style="position: absolute; top: 60px; left: 100px; text-align: left; color: white; font-size: 50px;">
+                <h1 class="h1" style="color: white; text-shadow: 1px 1px 1px black;">Transform your ideas into reality with expert coding, custom websites, intuitive apps, and seamless user experiences that make your project stand out</h1>
+              </div>
+              <div class="list-div">
+                <ul style="color: white; text-shadow: 1px 1px 1px black;">
+                  <li><p>Efficient, Scalable Code Solutions</p></li>
+                  <li><p>Customizable Features & Functionality</p></li>
+                  <li><p>Advanced Web & App Development</p></li>
+                  <li><p>Optimized Performance & Speed</p></li>
+                  <li><p>Cutting-Edge Mobile App Development</p></li>
+                  <li ><p>Interactive User Interfaces & UX</p></li>
+                </ul>
+                <a href="x.html" class="a-Try-now"><button class="Try-now">Try now</button></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="container container2" style="width: 100%; margin-top: 70px; padding: 0; overflow: visible;  border-bottom:none;"> 
+        <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <li data-target="#myCarousel2" data-slide-to="2"></li>
+          </ol>
+          
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" style="overflow: visible;">
+            <div class="item active item1">
+              <img src="CSS/backHome.jpg" alt="General" class="imgdb" style="width:100%; ">
+              <div class="item-abs" style="position: absolute; top: 110%; left: 15%; text-align: left; color: black;">
+                <h1 class="h1">Bring your vision to life with expert graphic design, custom websites, mobile apps, and dynamic digital menus that set your business apart!</h1>
+              <div class="list-div">
+                <ul>
+                  <li><p>Easy, Fast, Secure Solutions</p></li>
+                  <li><p>Premium Features & Customization</p></li>
+                  <li><p>Unique, Advanced Graphic Designs</p></li>
+                  <li><p>Seamless Website Development</p></li>
+                  <li><p>Innovative Mobile App Creation</p></li>
+                  <li><p>Dynamic Digital Menus for Any Business</p></li>
+                </ul>
+                <!--"this button"-->
+                <a href="x.html" class="a-Try-now"><button class="Try-now mcb">Try now</button></a>
+              </div>
+            </div>
+            </div>
+      
+            <div class="item item2">
+              <img class="imgdb" src="IMG/2m.jpg" alt="Graphic Designing" style="width:100%;">
+              <div class="item-abs" style="position: absolute; top: 110%; left: 17%; text-align: left;  font-size: 50px;">
+                <h1 class="h1">Unleash your brand's potential with professional graphic design, stunning websites, custom mobile apps, and captivating visual content that elevate your business!</h1>
+              <div class="list-div">
+                <ul style="color: black;">
+                  <li><p>Creative, Tailored Design Solutions</p></li>
+                  <li><p>Exceptional Features & Flexibility</p></li>
+                  <li><p>Innovative and Stunning Visual Designs</p></li>
+                  <li><p>Responsive and Professional Websites</p></li>
+                  <li><p>Custom Mobile App Design & Development</p></li>
+                  <li><p>Engaging Digital Content for Every Platform</p></li>
+                </ul>
+                <!--"this button"-->
+                <a href="x.html" class="a-Try-now"><button class="Try-now mcb">Try now</button></a>
+              </div>
+            </div>
+            </div>
+      
+            <div class="item item3"  style=" border-bottom:none;">
+              <img class="imgdb" src="IMG/3m.jpg" alt="Programming" style="width:100%;">
+              <div class="item-abs" style="position: absolute; top: 110%; left: 15%; text-align: left; font-size: 50px;">
+                <h1 class="h1">Transform your ideas into reality with expert coding, custom websites, intuitive apps, and seamless user experiences that make your project stand out</h1>
+              <div class="list-div">
+                <ul style="color: black;">
+                  <li><p>Efficient, Scalable Code Solutions</p></li>
+                  <li><p>Customizable Features & Functionality</p></li>
+                  <li><p>Advanced Web & App Development</p></li>
+                  <li><p>Optimized Performance & Speed</p></li>
+                  <li><p>Cutting-Edge Mobile App Development</p></li>
+                  <li><p>Interactive User Interfaces & UX</p></li>
+                </ul>
+                <!--"this button"-->
+                <a href="x.html" class="a-Try-now"><button class="Try-now mcb">Try now</button></a>
+              </div>
+            </div>
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
+
+
+    <div class="back-img">
+      <br><br> <br> <br><br> <br> 
+        <div class="main2" style="padding-bottom: 0; margin-bottom:10px;">
+            <div class="d22">
+                <p class="p123">Experience the Future of Dining with QR Menus</p>
+                <br>
+                <p class="p22">
+                  Switch to QR menus for a cleaner, more efficient way to present your offerings. Unlike traditional menus, QR codes are contactless, hygienic, and easy to update. We create fully customizable QR menus that reflect your brand, enhanced with unique graphic designs. Our platform allows you to manage your menu, track orders, and access real-time statistics. Easily update items, prices, and images, and offer promotions with ease. Plus, enjoy seamless integration with secure payment solutions for fast transactions.</p>
+                <p class="p22 p22m">
+                  Switch to QR menus for a cleaner, more efficient way to present your offerings. QR codes are contactless, hygienic, and easy to update. Our customizable QR menus reflect your brand, with seamless integration for tracking orders and real-time statistics. Easily update items, prices, and images, and offer promotions. Plus, enjoy fast transactions with secure payment solutions.</p>  
+                  <div class="pad"><a href="x.html" class="a2-Try-now"><button class="Try-now">Try Now</button></a></div>
+            </div>
+            <div class="d12">
+                <img class="img-d123" src="IMG/a1.png">
+            </div>
+        </div>
+        <br><br> <br> 
+         <div class="main1" style="padding-bottom: 0; margin-bottom: 30px; padding-top: 0; margin-top:0;">
+            <div class="d1">
+                <img class="img-d1" src="IMG/xm5.png">
+            </div>
+            <div class="d2">
+                <p class="p1">Transform Your Brand with Unique Graphic Design</p>
+                <br>
+                <p class="p2">
+                  Stand out with custom graphic designs that capture your brand's essence. Whether for logos, marketing materials, or other visuals, we specialize in creating unique, impactful designs. Our expert team works closely with you to ensure every detail aligns with your vision, delivering designs that make a lasting impression. From vibrant illustrations to modern layouts, we bring your ideas to life with creativity and precision. With our tailored approach, your brand will shine through exceptional visuals that connect with your audience and elevate your business.</p>
+                  <p class="p22 p22m">
+                    Stand out with custom graphic designs that capture your brand’s essence. We create unique, impactful visuals, from logos to marketing materials, ensuring every detail aligns with your vision. Our tailored approach brings your ideas to life, delivering designs that connect with your audience and elevate your business.</p>  
+                    <div class="pad"><a href="x.html" class="a2-Try-now"><button class="Try-now">Try Now</button></a></div>
+           </div>
+        </div>
+        <br><br> <br><br> <br>
+
+        <div class="main2" style="padding-top: 0; margin-top:0;">
+          <div class="d22">
+              <p class="p123">Unlock the Power of Programming with Smart Code Solutions</p>
+              <br>
+              <p class="p22">
+                Embrace modern programming for more efficient, scalable development. With advanced tools and frameworks, you can write cleaner, maintainable code that adapts to future needs. Our platform offers customizable templates to streamline your workflow and ensures smooth integration with other technologies. Manage versions, track bugs, and analyze code performance in real-time. Whether solo or in a team, our solutions boost collaboration, enabling faster development and smoother deployments. Plus, maintain secure coding standards with built-in best practices and automation tools.</p>
+                <p class="p22 p22m">
+                  Embrace modern programming for efficient, scalable development. With advanced tools, write cleaner, maintainable code that adapts to future needs. Our platform streamlines workflows, integrates seamlessly, and tracks code performance in real-time. Enhance collaboration for faster development and secure coding standards.</p>  
+                  <div class="pad"><a href="x.html" class="a2-Try-now"><button class="Try-now">Try Now</button></a></div>
+         </div>
+          <div class="d12">
+              <img class="img-d123" src="IMG/xm4.png">
+          </div>
+      </div>
+      <br><br><br><br><br><br>
+      <p class="h23">Our References</p>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+       <div class="divrefl"><button id="scrollLeftBtn" style="border: none; background-color: transparent;"><img src="IMG/arl.png" width="50px"></button></div> 
+       <div class="divreflm"><button id="scrollLeftBtnm" style="border: none; background-color: transparent;"><img src="IMG/arl.png" width="50px"></button></div> 
+       <div class="items">
+        
+        <a href="https://anwaratroshi-group.com/" target="_blank"><div class="item item2"></div></a>
+        <a href="https://mynu.app/" target="_blank"><div class="item item1"></div></a>
+        <a href="https://www.cheryiraq.com/" target="_blank"><div class="item item3"></div></a>
+        <a href="https://anwaratroshi-group.com/" target="_blank"><div class="item item2"></div></a>
+        <a href="https://mynu.app/" target="_blank"><div class="item item1"></div></a>
+        <a href="https://www.cheryiraq.com/" target="_blank"><div class="item item3"></div></a>
+        
+    </div>
+  <div class="divrefr"><button id="scrollRightBtn" style="border: none; background-color: transparent;"><img src="IMG/arr.png" width="50px"></button></div>
+  <div class="divrefrm"><button id="scrollRightBtnm" style="border: none; background-color: transparent;"><img src="IMG/arr.png" width="50px"></button></div>
+  </div>
+  
+  <div class="circlerefdiv">
+    <button id="scrollToBtn5"  onclick="refbuts1();"><img class="imr1" src="IMG/circlerefactive.png" width="15px"> </button>
+    <button id="scrollToBtn" onclick="refbuts2();"><img class="imr2" src="IMG/circleref.png" width="15px"></button>
+    <button id="scrollToBtn1" onclick="refbuts3();"><img class="imr3" src="IMG/circleref.png" width="15px"></button>
+    <button id="scrollToBtn2" onclick="refbuts4();"><img class="imr4" src="IMG/circleref.png" width="15px"></button>
+  </div>
+  <div class="circlerefdivm">
+    <button id="scrollToBtn5m"  onclick="refbuts1();"><img class="imr1 imr1m" src="IMG/circlerefactive.png" width="15px"> </button>
+    <button id="scrollToBtnm" onclick="refbuts2();"><img class="imr2 imr2m" src="IMG/circleref.png" width="15px"></button>
+    <button id="scrollToBtn1m" onclick="refbuts3();"><img class="imr3 imr3m" src="IMG/circleref.png" width="15px"></button>
+    <button id="scrollToBtn2m" onclick="refbuts4();"><img class="imr4 imr4m" src="IMG/circleref.png" width="15px"></button>
+    <button id="scrollToBtn3m" onclick="refbuts5();"><img class="imr5 imr5m" src="IMG/circleref.png" width="15px"></button>
+    <button id="scrollToBtn4m" onclick="refbuts6();"><img class="imr6 imr6m" src="IMG/circleref.png" width="15px"></button>
+  </div>
+
+  <br><br><br><br><br><br>
+    
+        
+    </div>
+
+    <div class="footer">
+        <div>
+            <div class="div-logo">
+                <img src="IMG/1-01.png" class="img-logo">
+            </div>
+            <div class="foot-div1">
+                <div><img class="dml dm1" src="IMG/facebook-black-icon.png"></div>
+                <div><img class="dml dm2" src="IMG/twitter.png"></div>
+                <div><a href="https://www.instagram.com/pixeelink/"><img class="dml dm3" src="IMG/png-transparent-app-b-w-instagram-logo-media-popular-social-2018-social-media-black-and-white-logos-icon.png"></a></div>
+                <div><img class="dml dm4" src="IMG/youtube.png"></div>
+                <div><img class="dml dm5" src="IMG/whatsapp-black-logo-icon--24.png"></div>
+            </div>
+        </div>
+        <div>
+            <p class="p12">About</p>
+            <p>Features</p>
+            <p>Benefits</p>
+            <p>News</p>
+            <p>FAQ</p>
+            <p>Get Contact</p>
+        </div>
+        <div>
+            <p class="p12">Solutions</p>
+            <p>QRMenu</p>
+            <p>Advanced WebSites</p>
+            <p>Maintenance</p>
+        </div>
+        <div>
+            <p class="p12">Policies</p>
+            <p>Privacy</p>
+            <p>Cookies</p>
+            <p>Security & Compliance</p>
+        </div>
+    </div>
+    
+
+    <script src="JS/x3.js"></script>
+</body>
+</html>
