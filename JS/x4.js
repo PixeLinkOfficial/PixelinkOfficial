@@ -128,79 +128,114 @@ document.getElementById("scrollRightBtnm").addEventListener("click", function() 
   }
 });
 
+
 document.getElementById("scrollToBtn").addEventListener("click", function() {
-  const container = document.querySelector(".items");
-  container.scrollTo({
-    left: 350,  // Scroll to 400px horizontally
-    behavior: "smooth" // Optional: makes the scroll smooth
-  });
+  const targetElement = document.querySelector(".targetClass1"); // Replace "targetClass" with the class of the element
+  if (targetElement) {
+    const container = document.querySelector(".items"); // The container you want to scroll within
+    container.scrollTo({
+      left: targetElement.offsetLeft, // Scroll horizontally to the left position of the target
+      behavior: "smooth"
+    });
+  }
 });
+
 document.getElementById("scrollToBtn1").addEventListener("click", function() {
-  const container = document.querySelector(".items");
-  container.scrollTo({
-    left: 710,  // Scroll to 400px horizontally
-    behavior: "smooth" // Optional: makes the scroll smooth
-  });
+  const targetElement = document.querySelector(".targetClass2"); // Replace "targetClass" with the class of the element
+  if (targetElement) {
+    const container = document.querySelector(".items"); // The container you want to scroll within
+    container.scrollTo({
+      left: targetElement.offsetLeft, // Scroll horizontally to the left position of the target
+      behavior: "smooth"
+    });
+  }
 });
 document.getElementById("scrollToBtn2").addEventListener("click", function() {
-  const container = document.querySelector(".items");
-  container.scrollTo({
-    left: 1170,  // Scroll to 400px horizontally
-    behavior: "smooth" // Optional: makes the scroll smooth
-  });
+  const targetElement = document.querySelector(".targetClass3"); // Replace "targetClass" with the class of the element
+  if (targetElement) {
+    const container = document.querySelector(".items"); // The container you want to scroll within
+    container.scrollTo({
+      left: targetElement.offsetLeft, // Scroll horizontally to the left position of the target
+      behavior: "smooth"
+    });
+  }
 });
 
 document.getElementById("scrollToBtn5").addEventListener("click", function() {
-  const container = document.querySelector(".items");
-  container.scrollTo({
-    left: 10,  // Scroll to 400px horizontally
-    behavior: "smooth" // Optional: makes the scroll smooth
-  });
+  const targetElement = document.querySelector(".targetClass4"); // Replace "targetClass" with the class of the element
+  if (targetElement) {
+    const container = document.querySelector(".items"); // The container you want to scroll within
+    container.scrollTo({
+      left: targetElement.offsetLeft, // Scroll horizontally to the left position of the target
+      behavior: "smooth"
+    });
+  }
 });
 
 
 document.getElementById("scrollToBtnm").addEventListener("click", function() {
-  const container = document.querySelector(".items");
-  container.scrollTo({
-    left: 320,  // Scroll to 400px horizontally
-    behavior: "smooth" // Optional: makes the scroll smooth
-  });
+  const targetElement = document.querySelector(".targetClass1"); // Replace "targetClass" with the class of the element
+  if (targetElement) {
+    const container = document.querySelector(".items"); // The container you want to scroll within
+    container.scrollTo({
+      left: targetElement.offsetLeft-15, // Scroll horizontally to the left position of the target
+      behavior: "smooth"
+    });
+  }
 });
+
 document.getElementById("scrollToBtn1m").addEventListener("click", function() {
-  const container = document.querySelector(".items");
-  container.scrollTo({
-    left: 620,  // Scroll to 400px horizontally
-    behavior: "smooth" // Optional: makes the scroll smooth
-  });
+  const targetElement = document.querySelector(".targetClass2"); // Replace "targetClass" with the class of the element
+  if (targetElement) {
+    const container = document.querySelector(".items"); // The container you want to scroll within
+    container.scrollTo({
+      left: targetElement.offsetLeft-15, // Scroll horizontally to the left position of the target
+      behavior: "smooth"
+    });
+  }
 });
 document.getElementById("scrollToBtn2m").addEventListener("click", function() {
-  const container = document.querySelector(".items");
-  container.scrollTo({
-    left: 920,  // Scroll to 400px horizontally
-    behavior: "smooth" // Optional: makes the scroll smooth
-  });
+  const targetElement = document.querySelector(".targetClass3"); // Replace "targetClass" with the class of the element
+  if (targetElement) {
+    const container = document.querySelector(".items"); // The container you want to scroll within
+    container.scrollTo({
+      left: targetElement.offsetLeft-15, // Scroll horizontally to the left position of the target
+      behavior: "smooth"
+    });
+  }
 });
 document.getElementById("scrollToBtn3m").addEventListener("click", function() {
-  const container = document.querySelector(".items");
-  container.scrollTo({
-    left: 1220,  // Scroll to 400px horizontally
-    behavior: "smooth" // Optional: makes the scroll smooth
-  });
+  const targetElement = document.querySelector(".targetClass5"); // Replace "targetClass" with the class of the element
+  if (targetElement) {
+    const container = document.querySelector(".items"); // The container you want to scroll within
+    container.scrollTo({
+      left: targetElement.offsetLeft-15, // Scroll horizontally to the left position of the target
+      behavior: "smooth"
+    });
+  }
 });
 document.getElementById("scrollToBtn4m").addEventListener("click", function() {
-  const container = document.querySelector(".items");
-  container.scrollTo({
-    left: 1530,  // Scroll to 400px horizontally
-    behavior: "smooth" // Optional: makes the scroll smooth
-  });
+  const targetElement = document.querySelector(".targetClass6"); // Replace "targetClass" with the class of the element
+  if (targetElement) {
+    const container = document.querySelector(".items"); // The container you want to scroll within
+    container.scrollTo({
+      left: targetElement.offsetLeft-15, // Scroll horizontally to the left position of the target
+      behavior: "smooth"
+    });
+  }
 });
+
 document.getElementById("scrollToBtn5m").addEventListener("click", function() {
-  const container = document.querySelector(".items");
-  container.scrollTo({
-    left: 20,  // Scroll to 400px horizontally
-    behavior: "smooth" // Optional: makes the scroll smooth
-  });
+  const targetElement = document.querySelector(".targetClass4"); // Replace "targetClass" with the class of the element
+  if (targetElement) {
+    const container = document.querySelector(".items"); // The container you want to scroll within
+    container.scrollTo({
+      left: targetElement.offsetLeft-15, // Scroll horizontally to the left position of the target
+      behavior: "smooth"
+    });
+  }
 });
+
 
 
 //
