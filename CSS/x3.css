@@ -289,9 +289,10 @@ ul p{
 }
 
 .img-d1{
-    width: 100%;
+    width: 90%;
     
 }
+
 
 
 
@@ -568,9 +569,7 @@ ul p{
     header{
         padding-right: 10px;
     }
-    .d1{
-        margin-left: 20%;
-    }
+    
     .main2{
         margin-bottom: 0;
         grid-template-columns: 1fr;
@@ -578,7 +577,13 @@ ul p{
         "d12"
         "d22";
     }
-
+    .d1{
+        margin: 0 auto 0 auto;
+        text-align: center;
+    }
+    .img-d1{
+        width: 75%;
+    }
     .d12{
         margin-bottom: 0;
         grid-area: d12;
