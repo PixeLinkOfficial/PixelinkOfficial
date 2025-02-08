@@ -1016,7 +1016,7 @@ ul p{
         width: 50%;
     }
 }
-@media (max-width:699px){
+@media (max-width:699px) and (min-width:502px){
     .items .item1{
         background-image: url(r1wein.png);
         background-repeat: no-repeat;
@@ -1043,6 +1043,32 @@ ul p{
         width: 60%;
     }
 }
-
+@media (max-width:501px){
+    .items .item1{
+        background-image: url(r1wein.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 85%;
+        background-color: #005810;
+    
+    }
+    .items .item2{
+        background-image: url(r2anwar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 85%;
+    
+    }
+    .items .item3{
+        background-image: url(r3chery.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 85%;
+    
+    }
+    .items{
+        width: 100%;
+    }
+}
 
 
