@@ -16,6 +16,7 @@
     will-change: transform;
     user-select: none;
     height: 200px;
+    width: 100%;
     margin: 0 10%;
     overflow: hidden;
     pointer-events: none;
@@ -28,9 +29,9 @@
     display: inline-block;
     background: rgb(255, 255, 255);
     border: 1px solid black;
-    height: 150px;
-    width: 300px;
-    margin: 2em 1.5em;
+    height: 70%;
+    width: 28%;
+    margin: 2em 2.5%;
     cursor: pointer;
     border-radius: 10px;
     pointer-events: auto;
@@ -58,6 +59,56 @@
     background-size: 40%;
 
 }
+
+@media (max-width:1370px) and (min-width:1070px){
+    .items .item1{
+        background-image: url(r1wein.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: #005810;
+    
+    }
+    .items .item2{
+        background-image: url(r2anwar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+    
+    }
+    .items .item3{
+        background-image: url(r3chery.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+    
+    }
+}
+@media (max-width:1069px) and (min-width:940px){
+    .items .item1{
+        background-image: url(r1wein.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+        background-color: #005810;
+    
+    }
+    .items .item2{
+        background-image: url(r2anwar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+    
+    }
+    .items .item3{
+        background-image: url(r3chery.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+    
+    }
+}
+
 
 body {
     font-family: "Roboto", serif;
@@ -482,9 +533,9 @@ ul p{
         display: inline-block;
         background: rgb(255, 255, 255);
         border: 1px solid black;
-        height: 100px;
-        width: 200px;
-        margin: 2em 3em;
+        height: 80%;
+        width: 70%;
+        margin: 2em 10%;
         cursor: pointer;
         border-radius: 10px;
     }
@@ -938,5 +989,60 @@ ul p{
         padding-top: 100%;
     }
 }
+@media (max-width:941px) and (min-width:700px){
+    .items .item1{
+        background-image: url(r1wein.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30%;
+        background-color: #005810;
+    
+    }
+    .items .item2{
+        background-image: url(r2anwar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30%;
+    
+    }
+    .items .item3{
+        background-image: url(r3chery.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30%;
+    
+    }
+    .items{
+        width: 50%;
+    }
+}
+@media (max-width:699px){
+    .items .item1{
+        background-image: url(r1wein.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: #005810;
+    
+    }
+    .items .item2{
+        background-image: url(r2anwar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+    
+    }
+    .items .item3{
+        background-image: url(r3chery.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+    
+    }
+    .items{
+        width: 60%;
+    }
+}
+
 
 
