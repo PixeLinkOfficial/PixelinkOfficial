@@ -831,4 +831,11 @@ body {
         width: 35px;
         
     }
+    .items{
+        margin-left: 10%;
     }
+    .items .item2{
+        margin-left: 14%;
+    }
+}
+    
