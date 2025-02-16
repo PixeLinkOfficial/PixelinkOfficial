@@ -59,6 +59,14 @@
     background-size: 40%;
 
 }
+.items .item4{
+    background-image: url(r4meta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    background-color: #208c8c;
+
+}
 
 @media (max-width:1370px) and (min-width:1070px){
     .items .item1{
@@ -83,6 +91,15 @@
         background-size: 50%;
     
     }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: #208c8c;
+    
+    }
+    
 }
 @media (max-width:1069px) and (min-width:940px){
     .items .item1{
@@ -107,6 +124,15 @@
         background-size: 60%;
     
     }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+        background-color: #208c8c;
+    
+    }
+    
 }
 
 
@@ -573,6 +599,15 @@ ul p{
         background-size: 40%;
     
     }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40%;
+        background-color: #208c8c;
+    
+    }
+    
     
 
     .slidermob{
@@ -1012,6 +1047,15 @@ ul p{
         background-size: 30%;
     
     }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30%;
+        background-color: #208c8c;
+    
+    }
+    
     .items{
         width: 50%;
     }
@@ -1039,6 +1083,15 @@ ul p{
         background-size: 50%;
     
     }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: #208c8c;
+    
+    }
+    
     .items{
         width: 60%;
     }
@@ -1066,6 +1119,15 @@ ul p{
         background-size: 85%;
     
     }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 85%;
+        background-color: #208c8c;
+    
+    }
+    
     .items{
         width: 100%;
     }
