@@ -818,11 +818,17 @@ body {
     .divreflm{
         padding: 0;
         margin: 0;
-        margin-left: -7%;
+        margin-left: -5%;
+        
     }
     .divrefrm{
         padding: 0;
         margin: 0;
-        margin-right: -7%;
+        margin-right: -5%;
+        
+    }
+    .divrefrm img,.divreflm img{
+        width: 35px;
+        
     }
     }
