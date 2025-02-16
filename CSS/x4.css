@@ -287,6 +287,14 @@ body {
     background-size: 40%;
 
 }
+.items .item4{
+    background-image: url(r4meta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    background-color: #208c8c;
+
+}
 
 .circlerefdiv{
     display: flex; flex-direction: row; justify-content: center; align-items: center;
@@ -512,6 +520,14 @@ body {
         background-size: 40%;
     
     }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40%;
+        background-color: #208c8c;
+    
+    }
     .dmdiv3{
         display: grid;
         grid-template-columns: 1fr;
@@ -651,6 +667,14 @@ body {
         background-size: 50%;
     
     }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: #208c8c;
+    
+    }
 }
 @media (max-width:1069px) and (min-width:986px){
     .items .item1{
@@ -675,6 +699,14 @@ body {
         background-size: 60%;
     
     }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+        background-color: #208c8c;
+    
+    }
 }
 @media (max-width:985px) and (min-width:700px){
     .items .item1{
@@ -697,6 +729,14 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 30%;
+    
+    }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30%;
+        background-color: #208c8c;
     
     }
     .items{
@@ -726,6 +766,14 @@ body {
         background-size: 50%;
     
     }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        background-color: #208c8c;
+    
+    }
     .items{
         width: 60%;
     }
@@ -751,6 +799,14 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 85%;
+    
+    }
+    .items .item4{
+        background-image: url(r4meta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 85%;
+        background-color: #208c8c;
     
     }
     .items{
