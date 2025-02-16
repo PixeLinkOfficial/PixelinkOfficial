@@ -783,7 +783,7 @@ body {
         background-image: url(r1wein.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 85%;
+        background-size: 50%;
         background-color: #005810;
     
     }
@@ -791,21 +791,21 @@ body {
         background-image: url(r2anwar.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 85%;
+        background-size: 50%;
     
     }
     .items .item3{
         background-image: url(r3chery.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 85%;
+        background-size: 50%;
     
     }
     .items .item4{
         background-image: url(r4meta.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 85%;
+        background-size: 50%;
         background-color: #208c8c;
     
     }
@@ -814,3 +814,15 @@ body {
     }
 }
 
+@media (max-width:600px){
+    .divreflm{
+        padding: 0;
+        margin: 0;
+        margin-left: -7%;
+    }
+    .divrefrm{
+        padding: 0;
+        margin: 0;
+        margin-right: -7%;
+    }
+    }
