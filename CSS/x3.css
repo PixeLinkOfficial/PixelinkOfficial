@@ -355,9 +355,6 @@ ul p{
     line-height: 23px;
 }
 
-
-
-
 .main1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -532,6 +529,12 @@ ul p{
 }
 
 @media (max-width:940px){
+    .servicemobn{
+        margin-top: -80px;
+    }
+    .container{
+        padding-top: 120px;
+    }
     .divrefl{
         margin-left: 2%;
         display: none;
@@ -1152,7 +1155,7 @@ ul p{
     
 }
 .items{
-    margin-left: 9%;
+    margin-left: 10%;
 }
 .items .item2{
     margin-left: 14%;
