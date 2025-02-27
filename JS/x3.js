@@ -415,6 +415,31 @@ function changeLanguage(selectElement) {
         arabic();
 }
 
+function updateText() {
+  const paragraph = document.getElementById("text");
+  if (window.matchMedia("(max-width: 940px)").matches) {
+      document.querySelector('.kk1').innerHTML="Experience Future Dining with QR";
+      document.querySelector('.kk1').style.fontWeight="550";
+      document.querySelector('.kk2').innerHTML="Elevate Your Brand Design";
+      document.querySelector('.kk2').style.fontWeight="550";
+      document.querySelector('.kk3').innerHTML="Unlock Code with Smart Solutions";
+      document.querySelector('.kk3').style.fontWeight="550";
+  } else {
+    document.querySelector('.kk1').innerHTML="Experience the Future of Dining with QR Menus";
+    document.querySelector('.kk1').style.fontWeight="600";
+    document.querySelector('.kk2').innerHTML="Transform Your Brand with Unique Graphic Design";
+    document.querySelector('.kk2').style.fontWeight="600";
+    document.querySelector('.kk3').innerHTML="Unlock the Power of Programming with Smart Code Solutions";
+    document.querySelector('.kk3').style.fontWeight="600";
+  }
+}
+
+// Run on load
+updateText();
+
+// Listen for window resize
+window.addEventListener("resize", updateText);
+
 function arabic(){
     alert('hi');
     document.write(`
