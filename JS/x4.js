@@ -414,15 +414,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Apply staggered delays dynamically
         if (entry.target.classList.contains("dmdiv2p1")) {
-          entry.target.style.animationDelay = "0.3s";
+          entry.target.style.animationDelay = "0.2s";
         } else if (entry.target.classList.contains("dmdiv2p2")) {
-          entry.target.style.animationDelay = "0.4s";  // Ensure .dmdiv2p2 animates after .dmdiv2p1
+          entry.target.style.animationDelay = "0.3s";  // Ensure .dmdiv2p2 animates after .dmdiv2p1
         }
         
         if (entry.target.classList.contains("dmdiv1p1")) {
-          entry.target.style.animationDelay = "0.3s";
+          entry.target.style.animationDelay = "0.2s";
         } else if (entry.target.classList.contains("dmdiv1p2")) {
-          entry.target.style.animationDelay = "0.4s";  // Ensure .dmdiv1p2 animates after .dmdiv1p1
+          entry.target.style.animationDelay = "0.3s";  // Ensure .dmdiv1p2 animates after .dmdiv1p1
         }
 
         observer.unobserve(entry.target); // Prevent re-triggering
