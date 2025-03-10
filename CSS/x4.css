@@ -839,3 +839,62 @@ body {
     }
 }
     
+/*animations*/
+/* Keyframes for sliding in from left */
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Keyframes for sliding in from right */
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Keyframes for slide-up effect (used for .mx-4, .mx-5, .mx-6) */
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Initial hidden state for all elements */
+  .mx-4, .mx-5, .mx-6,
+  .dmdiv1imgdiv, .dmdiv2p1, .dmdiv2p2, .dmdiv3imgdiv,
+  .dmdiv3textdiv, .dmdiv2imgdiv, .dmdiv1p1, .dmdiv1p2 {
+    opacity: 0;
+    transform: translateY(20px);  /* All elements are initially hidden */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Animation classes for elements */
+  .slide-left {
+    animation: slideInLeft 0.5s ease forwards;
+  }
+  
+  .slide-right {
+    animation: slideInRight 0.4s ease forwards;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+  
