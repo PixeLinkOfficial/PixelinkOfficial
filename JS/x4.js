@@ -416,13 +416,13 @@ document.addEventListener("DOMContentLoaded", function () {
         if (entry.target.classList.contains("dmdiv2p1")) {
           entry.target.style.animationDelay = "0.3s";
         } else if (entry.target.classList.contains("dmdiv2p2")) {
-          entry.target.style.animationDelay = "0.5s";  // Ensure .dmdiv2p2 animates after .dmdiv2p1
+          entry.target.style.animationDelay = "0.4s";  // Ensure .dmdiv2p2 animates after .dmdiv2p1
         }
         
         if (entry.target.classList.contains("dmdiv1p1")) {
           entry.target.style.animationDelay = "0.3s";
         } else if (entry.target.classList.contains("dmdiv1p2")) {
-          entry.target.style.animationDelay = "0.5s";  // Ensure .dmdiv1p2 animates after .dmdiv1p1
+          entry.target.style.animationDelay = "0.4s";  // Ensure .dmdiv1p2 animates after .dmdiv1p1
         }
 
         observer.unobserve(entry.target); // Prevent re-triggering
