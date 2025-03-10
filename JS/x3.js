@@ -439,6 +439,69 @@ updateText();
 
 // Listen for window resize
 window.addEventListener("resize", updateText);
+//
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".scroll-animation");
+
+  function checkScroll() {
+    elements.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= window.innerHeight * 0.8 && rect.bottom >= 0) {
+        el.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkScroll);
+  window.addEventListener("load", checkScroll);
+  checkScroll(); // Check on load
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".h1, .list-div, .p123, .p22, .d1, .d12, .p1, .p2, .mx-4, .mx-5, .mx-6, .cmdbd1, .cmdbd2, .cmdbd3, .dmdiv3imgdiv, .dmdiv3textdiv");
+
+  const observerOptions = {
+    root: null, // Observe in the viewport
+    rootMargin: "0px",
+    threshold: 0.3 // Element must be at least 30% visible before animating
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log("Animating:", entry.target.className); // Debugging log
+
+        // Elements that slide in from the LEFT
+        if (entry.target.matches(".h1, .list-div, .p123, .p22, .d1, .dmdiv3imgdiv")) {
+          entry.target.classList.add("slide-left");
+        } 
+        // Elements that slide in from the RIGHT
+        else if (entry.target.matches(".d12, .p1, .p2, .dmdiv3textdiv")) {
+          entry.target.classList.add("slide-right");
+        } 
+        // Elements that slide up (mx-4, mx-5, mx-6, cmdbd1, cmdbd2, cmdbd3)
+        else if (entry.target.matches(".mx-4, .mx-5, .mx-6, .cmdbd1, .cmdbd2, .cmdbd3")) {
+          entry.target.classList.add("slide-up");
+        }
+
+        // Apply staggered delays dynamically
+        if (entry.target.classList.contains("mx-4") || entry.target.classList.contains("cmdbd1")) {
+          entry.target.style.animationDelay = "0.1s";
+        } else if (entry.target.classList.contains("mx-5") || entry.target.classList.contains("cmdbd2")) {
+          entry.target.style.animationDelay = "0.2s";
+        } else if (entry.target.classList.contains("mx-6") || entry.target.classList.contains("cmdbd3")) {
+          entry.target.style.animationDelay = "0.3s";
+        }
+
+        observer.unobserve(entry.target); // Prevent re-triggering
+      }
+    });
+  }, observerOptions);
+
+  elements.forEach((el) => observer.observe(el));
+});
+
+
 
 function arabic(){
     alert('hi');
