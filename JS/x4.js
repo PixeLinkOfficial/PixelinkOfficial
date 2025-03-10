@@ -382,3 +382,53 @@ document.body.addEventListener('click', (event) => {
         element.style.display = 'none';  // Hide the element
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".mx-4, .mx-5, .mx-6, .dmdiv1imgdiv, .dmdiv2p1, .dmdiv2p2, .dmdiv3imgdiv, .dmdiv3textdiv, .dmdiv2imgdiv, .dmdiv1p1, .dmdiv1p2");
+
+  const observerOptions = {
+    root: null, // Observe in the viewport
+    rootMargin: "0px",
+    threshold: 0.3 // Element must be at least 30% visible before animating
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log("Animating:", entry.target.className); // Debugging log
+
+        // Left-to-Right Animations
+        if (entry.target.matches(".dmdiv1imgdiv, .dmdiv2p1, .dmdiv2p2, .dmdiv3imgdiv")) {
+          entry.target.classList.add("slide-left");
+        } 
+
+        // Right-to-Left Animations
+        else if (entry.target.matches(".dmdiv3textdiv, .dmdiv2imgdiv, .dmdiv1p1, .dmdiv1p2")) {
+          entry.target.classList.add("slide-right");
+        }
+
+        // Apply slide-up animation for .mx-4, .mx-5, .mx-6
+        if (entry.target.matches(".mx-4, .mx-5, .mx-6")) {
+          entry.target.classList.add("slide-up");
+        }
+
+        // Apply staggered delays dynamically
+        if (entry.target.classList.contains("dmdiv2p1")) {
+          entry.target.style.animationDelay = "0.3s";
+        } else if (entry.target.classList.contains("dmdiv2p2")) {
+          entry.target.style.animationDelay = "0.5s";  // Ensure .dmdiv2p2 animates after .dmdiv2p1
+        }
+        
+        if (entry.target.classList.contains("dmdiv1p1")) {
+          entry.target.style.animationDelay = "0.3s";
+        } else if (entry.target.classList.contains("dmdiv1p2")) {
+          entry.target.style.animationDelay = "0.5s";  // Ensure .dmdiv1p2 animates after .dmdiv1p1
+        }
+
+        observer.unobserve(entry.target); // Prevent re-triggering
+      }
+    });
+  }, observerOptions);
+
+  elements.forEach((el) => observer.observe(el));
+});
